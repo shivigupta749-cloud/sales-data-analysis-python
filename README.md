@@ -1,44 +1,36 @@
-# 🦠 COVID-19 Data Analysis Project
+# Sales Data Analysis using Python
 
-## 📌 Project Description
-This project is developed using Python to fetch real-time COVID-19 data using a public API.  
-It displays total confirmed cases, total deaths, and total recovered patients worldwide.
-
----
-
-## 🎯 Aim
-The aim of this project is to understand:
-- API integration in Python
-- JSON data handling
-- Real-time data fetching
-
----
+## 📌 Project Overview
+This project analyzes monthly sales data using Python and Pandas library.
+It takes user input for sales data and performs statistical analysis.
 
 ## 🛠 Technologies Used
 - Python
-- Requests Library
-- JSON
-- GitHub
+- Pandas
 
----
+## ✨ Features
+- Takes month and sales input from user
+- Calculates:
+  - Total Sales
+  - Average Sales
+  - Maximum Sales
+  - Minimum Sales
+- Saves output into CSV file (sales_output.csv)
 
-## ⚙ How It Works
-1. The program sends a request to the COVID-19 API.
-2. The API returns data in JSON format.
-3. Python extracts required values.
-4. The program displays total cases, deaths, and recovered data.
+## ▶ How to Run
 
----
+1. Install required library:
+   pip install pandas
 
-## 💻 Source Code
+2. Run the program:
+   python sales_analysis.py
 
-```python
-import requests
+## 📂 Output
+- Console analysis result
+- Generated CSV file
 
-url = "https://disease.sh/v3/covid-19/all"
-response = requests.get(url)
-data = response.json()
-
-print("Total Cases:", data["cases"])
-print("Total Deaths:", data["deaths"])
-print("Total Recovered:", data["recovered"])
+## 📊 Example Output
+Total Sales: 37000
+Average Sales: 12333.33
+Maximum Sales: 15000
+Minimum Sales: 10000
